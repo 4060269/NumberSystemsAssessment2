@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Decimal Conversion</title>
+    <link rel="stylesheet" href="mainSite.css">
+    <script>
+        function authentication(form) {
+            alert("Complete Javascript, and disable this alert.");
+        }
+    </script>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bitsAndBytes.html">Bits & Bytes (Variables & Data Types)</a></li>
+        <li><a href="calculator.html">Power of Two Calculator (Sequences)</a></li>
+        <li><a href="quiz.html">Quiz (Decisions)</a></li>
+        <li><a href="binaryCounter.html">Binary Counter (Loops)</a></li>
+        <li><a href="decimalConversion.html">Decimal Conversion (Modules)</a></li>
+        <li><a href="sumAndProducts.html">Sum & Products (Data Structures)</a></li>
+        <li><a class="active" href="authentication.html">Login (Javascript Authentication)</a></li>
+    </ul>
+</nav>
+
+<h1>Login</h1>
+
+<div class="grid-container">
+    <div class="banner">
+        <p>
+            This page will demonstrate some basic front-end authentication. Not great security, however <i>some</i>
+            security.
+        </p>
+        <p>
+            When the user clicks "Log in", the username and passwords entered will be read by the authentication()
+            function and checked against the correct values below.
+        </p>
+        <p>
+            If the user enters correctly, the output is updated with "Success" in green.
+        </p>
+        <p>
+            If the user enters incorrectly, the output is updated with "Failed" in red.
+        </p>
+
+        <p>
+            The correct username is <strong>admin</strong>.<br>
+            The correct password is <strong>admin</strong>.
+        </p>
+        <p>
+            <strong>Note to students:</strong> In your tutorial, you should also discuss and/or demonstrate why this is not ideal security, and some other possibilities for better security of usernames and passwords.
+        </p>
+    </div>
+    <div>
+        <form onsubmit="return false">
+            <p>
+                <label for="uname">Username</label>
+                <input type='text' id="uname" name='uname'>
+            </p>
+            <p>
+                <label for="pwd">Password</label>
+                <input type='password' id="pwd" name='pwd'>
+            </p>
+            <button onclick="authentication(this.form)">Log In</button>
+        </form>
+    </div>
+    <div>
+        <p id="outputStatus">Output</p>
+
+    </div>
+</div>
+
+</body>
+
+</html>

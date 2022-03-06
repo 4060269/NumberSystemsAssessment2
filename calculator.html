@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="mainSite.css">
+
+    <script>
+        function twoToThePowerOf(form) {
+            alert("Complete Javascript, and disable this alert.");
+        }
+    </script>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bitsAndBytes.html">Bits & Bytes (Variables & Data Types)</a></li>
+        <li><a class="active" href="calculator.html">Power of Two Calculator (Sequences)</a></li>
+        <li><a href="quiz.html">Quiz (Decisions)</a></li>
+        <li><a href="binaryCounter.html">Binary Counter (Loops)</a></li>
+        <li><a href="decimalConversion.html">Decimal Conversion (Modules)</a></li>
+        <li><a href="sumAndProducts.html">Sum & Products (Data Structures)</a></li>
+        <li><a href="authentication.html">Login (Javascript Authentication)</a></li>
+    </ul>
+</nav>
+
+<h1>Calculator</h1>
+
+<div class="grid-container">
+    <div class="banner">
+        <p>
+            This page will take in one integer input, calculate 2 to the power of that number, and finally output the
+            result.
+        </p>
+        <p>
+            This is a simple demonstration of a sequence in Software Development.
+        </p>
+
+    </div>
+    <div>
+        <form onsubmit="return false">
+            <p>
+                <label for="powerValue">Power value</label>
+                <input type='text' size=25 id="powerValue" name='powerValue'>
+            </p>
+
+
+            <button onclick="twoToThePowerOf(this.form)">Run Calculation</button>
+        </form>
+    </div>
+    <div>
+        <p id="powerResult">The Answer will appear here.</p>
+    </div>
+
+
+</div>
+
+</body>
+
+</html>

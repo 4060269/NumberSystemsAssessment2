@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="mainSite.css">
+    <script>
+        function randomNumberGenerator(nums) {
+            alert("Complete Javascript, and disable this alert.");
+        }
+    </script>
+    <style>
+        pre code {
+            /*background-color: #eee;*/
+            border: 1px solid #999;
+            display: block;
+            /*padding: 2px;*/
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bitsAndBytes.html">Bits & Bytes (Variables & Data Types)</a></li>
+        <li><a href="calculator.html">Power of Two Calculator (Sequences)</a></li>
+        <li><a href="quiz.html">Quiz (Decisions)</a></li>
+        <li><a href="binaryCounter.html">Binary Counter (Loops)</a></li>
+        <li><a href="decimalConversion.html">Decimal Conversion (Modules)</a></li>
+        <li><a class="active" href="sumAndProducts.html">Sum & Products (Data Structures)</a></li>
+        <li><a href="authentication.html">Login (Javascript Authentication)</a></li>
+    </ul>
+</nav>
+
+<h1>Sum and Product</h1>
+
+<div class="grid-container">
+    <div class="banner">
+        <p>
+            Welcome!
+        </p>
+        <p>
+            This page will generate a given number of random numbers, and output the sum and product of those
+            numbers.
+        </p>
+        <p>
+            Press the button below, enter the number of random numbers you wish to generate and then see the answer.
+        </p>
+        <p>
+            <strong>Note to students:</strong> Store the running sum and product into a dictionary called <code>numberDetails</code>. For
+            instance
+            the dictionary might look like:
+        </p>
+
+        <pre>
+        <code>
+            numberDetails = {
+                sum: 0;
+                product: 1;
+            }
+        </code>
+        </pre>
+    </div>
+    <div>
+        <p>
+            <button onclick="randomNumberGenerator(2)">Show Sum and Product</button>
+
+        </p>
+    </div>
+    <div><p id="randomNumbersOutput">Example Output</p></div>
+
+
+</div>
+
+</body>
+
+</html>

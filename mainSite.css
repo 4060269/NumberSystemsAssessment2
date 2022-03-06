@@ -1,0 +1,65 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    background-color: #566246;
+    padding: 5px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.tinyText {
+    font-size: 10px;
+}
+
+.banner {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+body {
+    background-color: #9B9987;
+}
+
+h1 {
+    background-color: #190B28;
+    color: white;
+    text-align: center;
+}
+
+
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #566246;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #143109;
+}
+
+.active {
+    background-color: #A4C2A5;
+}

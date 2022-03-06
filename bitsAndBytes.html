@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bits and Bytes</title>
+    <link rel="stylesheet" href="mainSite.css">
+    <script>
+        function convertBits(form) {
+            alert("Complete Javascript, and disable this alert.");
+        }
+    </script>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="bitsAndBytes.html">Bits & Bytes (Variables & Data Types)</a></li>
+        <li><a href="calculator.html">Power of Two Calculator (Sequences)</a></li>
+        <li><a href="quiz.html">Quiz (Decisions)</a></li>
+        <li><a href="binaryCounter.html">Binary Counter (Loops)</a></li>
+        <li><a href="decimalConversion.html">Decimal Conversion (Modules)</a></li>
+        <li><a href="sumAndProducts.html">Sum & Products (Data Structures)</a></li>
+        <li><a href="authentication.html">Login (Javascript Authentication)</a></li>
+    </ul>
+</nav>
+
+<h1>Bits and Bytes</h1>
+
+<div class="grid-container">
+    <div class="banner">
+        <p>At the core, computer systems are made up out of <strong>bits</strong>. Bits is shorthand for Binary Digits.
+        </p>
+        <p>These are 0's and 1's.</p>
+        <p>As a standard, these can be organised into groups of 8, which are referred to as <strong>bytes</strong>.</p>
+        <p>Below, enter individual bits, which will be converted into a decimal number. For instance 10000000 will
+            output 128, because the 1 is in the 128th position.</p>
+        <img src="images/binary.png">
+        <p style="text-align:left"><strong>Student Note:</strong> Store the individual bits (0 or 1) into an array (e.g.
+            <code>bits</code>). Then you can run the
+            command: <code>let num = +bits.join("")</code>, where <code>bits</code> is the name of the array.
+            <br>The command converts the array of integers into an integer.
+            <br>With the example above the array <code>1,0,0,0,0,0,0,0</code> would be converted into the integer:
+            <code>10000000</code>. Then this number can be converted from binary into decimal. This can be researched.
+        </p></div>
+    <div>
+        <form onsubmit="return false">
+            <p>Enter the individual bits that make up a byte. One bit per box.</p>
+            <p>
+                <label for="input128">128</label>
+                <input type='number' id="input128" name='input128'>
+            </p>
+            <p>
+                <label for="input64">64</label>
+                <input type='number' id="input64" name='input64'>
+            </p>
+            <p>
+                <label for="input32">32</label>
+                <input type='number' id="input32" name='input32'>
+            </p>
+            <p>
+                <label for="input16">16</label>
+                <input type='number' id="input16" name='input16'>
+            </p>
+            <p>
+                <label for="input8">8</label>
+                <input type='number' id="input8" name='input8'>
+            </p>
+            <p>
+                <label for="input4">4</label>
+                <input type='number' id="input4" name='input4'>
+            </p>
+
+            <p>
+                <label for="input2">2</label>
+                <input type='number' id="input2" name='input2'>
+            </p>
+            <p>
+                <label for="input1">1</label>
+                <input type='number' id="input1" name='input1'>
+            </p>
+            <button onclick="convertBits(this.form)">Click Here</button>
+        </form>
+    </div>
+    <div><p id="output">Output</p></div>
+</div>
+
+</body>
+
+</html>

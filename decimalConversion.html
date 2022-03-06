@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Decimal Conversion</title>
+    <link rel="stylesheet" href="mainSite.css">
+    <script>
+        function startConversionProcess() {
+            alert("Complete Javascript, and disable this alert.");
+        }
+    </script>
+</head>
+
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bitsAndBytes.html">Bits & Bytes (Variables & Data Types)</a></li>
+        <li><a href="calculator.html">Power of Two Calculator (Sequences)</a></li>
+        <li><a href="quiz.html">Quiz (Decisions)</a></li>
+        <li><a href="binaryCounter.html">Binary Counter (Loops)</a></li>
+        <li><a class="active" href="decimalConversion.html">Decimal Conversion (Modules)</a></li>
+        <li><a href="sumAndProducts.html">Sum & Products (Data Structures)</a></li>
+        <li><a href="authentication.html">Login (Javascript Authentication)</a></li>
+    </ul>
+</nav>
+
+<h1>Decimal Conversion</h1>
+
+<div class="grid-container">
+    <div class="banner">
+        <p>
+            Converting from Decimal to Binary (and other number systems) is needed for various reasons in Computer
+            Science.
+        </p>
+        <p>
+            This page will convert the decimal number you enter into the binary (base 2) and the hexadecimal (base 16).
+            This will be done via various functions.
+        </p>
+        <p>
+            In the HTML file, there will eventually be a number of functions (modules).
+        <p>
+        <div style="text-align: left; padding-left: 2em">
+            <code>startConversionProcess()</code> will run when the user presses the button below. This function will
+            prompt the user for the binary number through a prompt() command.
+            <p>
+                This function will call the other functions, listed below.
+            </p>
+            <p>
+                <code>convertToBinary()</code> - converts the number entered in Decimal (base 10) in to binary and
+                updates
+                the relevant
+                HTML tag.<br>
+                <code>convertToHexadecimal(decimalNumberToConvert)</code> - converts decimalNumberToConvert into
+                Hexadecimal
+                (base 16) and
+                will return the value back to <code>startConversionProcess</code> to update the relevant HTML.<br>
+            </p>
+        </div>
+        <p>
+            You may research how to do the actual converting through this video. <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xzi4-26vdOM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </p>
+
+        <p>You can check your output to ensure it's correct <a
+                href="https://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html">here</a>.</p>
+
+
+    </div>
+    <div>
+        <button onclick="startConversionProcess()">Convert to Binary and Hexadecimal</button>
+    </div>
+    <div>
+        <p id="outputBinary">Output Binary</p>
+        <p id="outputHexadecimal">Output Hexadecimal</p>
+
+    </div>
+</div>
+
+</body>
+
+</html>
