@@ -8,7 +8,7 @@
     <script>
       function twoToThePowerOf(form) {
         // read and store power value
-        let power = parseInt(document.getElementById("powerValue"));
+        let power = parseInt(form.powerValue.value);
         // convert power to integer
         let answer = Math.pow(2, power);
         //
