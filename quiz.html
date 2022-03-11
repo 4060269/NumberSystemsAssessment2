@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="mainSite.css">
+    <link rel="stylesheet" href="mainSite.css" />
     <script>
-        function checkAnswers(form) {
-            alert("Complete Javascript, and disable this alert.");
-        }
-    </script>
-</head>
+      function checkAnswers(form) {
+        let answerOne = form.inputOne.value;
+        let answerTwo = form.inputTwo.value;
+        let answerThree = form.inputThree.value;
+        let resultOne = "";
+        let resultTwo = "";
+        let resultThree = "";
 
-<body>
-<nav>
-    <ul>
+        if (answerOne == "One") {
+          resultOne = "Correct";
+        } else {
+          resultOne = "Incorrect";
+        }
+
+        if (answerTwo === "Two") {
+          resultTwo = "Correct";
+        } else {
+          resultTwo = "Incorrect";
+        }
+
+        if (answerThree === "Three") {
+          resultThree = "Correct";
+        } else {
+          resultThree = "Incorrect";
+        }
+
+        document.getElementById("outputOne").innerHTML = resultOne;
+        document.getElementById("outputTwo").innerHTML = resultTwo;
+        document.getElementById("outputThree").innerHTML = resultThree;
+      }
+    </script>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="bitsAndBytes.html">Bits & Bytes (Variables & Data Types)</a></li>
-        <li><a href="calculator.html">Power of Two Calculator (Sequences)</a></li>
+        <li>
+          <a href="bitsAndBytes.html">Bits & Bytes (Variables & Data Types)</a>
+        </li>
+        <li>
+          <a href="calculator.html">Power of Two Calculator (Sequences)</a>
+        </li>
         <li><a class="active" href="quiz.html">Quiz (Decisions)</a></li>
         <li><a href="binaryCounter.html">Binary Counter (Loops)</a></li>
-        <li><a href="decimalConversion.html">Decimal Conversion (Modules)</a></li>
-        <li><a href="sumAndProducts.html">Sum & Products (Data Structures)</a></li>
-        <li><a href="authentication.html">Login (Javascript Authentication)</a></li>
-    </ul>
-</nav>
+        <li>
+          <a href="decimalConversion.html">Decimal Conversion (Modules)</a>
+        </li>
+        <li>
+          <a href="sumAndProducts.html">Sum & Products (Data Structures)</a>
+        </li>
+        <li>
+          <a href="authentication.html">Login (Javascript Authentication)</a>
+        </li>
+      </ul>
+    </nav>
 
-<h1>Quiz!</h1>
+    <h1>Quiz!</h1>
 
-<div class="grid-container">
-    <div class="banner">
-        <p>This page serves as a quiz for some of the topics that are presented on this site.</p>
+    <div class="grid-container">
+      <div class="banner">
+        <p>
+          This page serves as a quiz for some of the topics that are presented
+          on this site.
+        </p>
         <p>Answer the questions as truthfully as you can.</p>
-    </div>
-    <div>
+      </div>
+      <div>
         <p>Questions</p>
         <form onsubmit="return false">
-            <p>
-                <label for="inputOne">Question 1</label>
-                <input type='text' size=25 id="inputOne" name='inputOne'>
-            </p>
-            <p>
-                <label for="inputTwo">Question 2</label>
-                <input type='text' size=25 id="inputTwo" name='inputTwo'>
-            </p>
-            <p>
-                <label for="inputThree">Question 3</label>
-                <input type='text' size=25 id="inputThree" name='inputThree'>
-            </p>
-            <button onclick="checkAnswers(this.form)">Check Answers</button>
+          <p>
+            <label for="inputOne">Question 1</label>
+            <input type="text" size="25" id="inputOne" name="inputOne" />
+          </p>
+          <p>
+            <label for="inputTwo">Question 2</label>
+            <input type="text" size="25" id="inputTwo" name="inputTwo" />
+          </p>
+          <p>
+            <label for="inputThree">Question 3</label>
+            <input type="text" size="25" id="inputThree" name="inputThree" />
+          </p>
+          <button onclick="checkAnswers(this.form)">Check Answers</button>
         </form>
-    </div>
-    <div>
+      </div>
+      <div>
         <p>Answers</p>
         <p><label id="outputOne"></label></p>
         <p><label id="outputTwo"></label></p>
         <p><label id="outputThree"></label></p>
+      </div>
     </div>
-
-
-</div>
-
-</body>
-
+  </body>
 </html>
