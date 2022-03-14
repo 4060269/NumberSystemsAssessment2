@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Powers of Two</title>
-    <link rel="stylesheet" href="mainSite.css">
+    <link rel="stylesheet" href="mainSite.css" />
     <script>
-        function powers() {
-            alert("Complete Javascript, and disable this alert.");
+      function powers() {
+        for (i = 0; i <= 100; i++) {
+          powersOutput = Math.pow(i, 2);
+          document.getElementById("output").innerHTML = powersOutput;
         }
+      }
+      ShowPowersOf(2, 50);
     </script>
-</head>
+  </head>
 
-<body>
-<nav>
-    <ul>
+  <body>
+    <nav>
+      <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="bitsAndBytes.html">Bits & Bytes (Variables & Data Types)</a></li>
-        <li><a href="calculator.html">Power of Two Calculator (Sequences)</a></li>
+        <li>
+          <a href="bitsAndBytes.html">Bits & Bytes (Variables & Data Types)</a>
+        </li>
+        <li>
+          <a href="calculator.html">Power of Two Calculator (Sequences)</a>
+        </li>
         <li><a href="quiz.html">Quiz (Decisions)</a></li>
-        <li><a class="active" href="binaryCounter.html">Binary Counter (Loops)</a></li>
-        <li><a href="decimalConversion.html">Decimal Conversion (Modules)</a></li>
-        <li><a href="sumAndProducts.html">Sum & Products (Data Structures)</a></li>
-        <li><a href="authentication.html">Login (Javascript Authentication)</a></li>
-    </ul>
-</nav>
+        <li>
+          <a class="active" href="binaryCounter.html">Binary Counter (Loops)</a>
+        </li>
+        <li>
+          <a href="decimalConversion.html">Decimal Conversion (Modules)</a>
+        </li>
+        <li>
+          <a href="sumAndProducts.html">Sum & Products (Data Structures)</a>
+        </li>
+        <li>
+          <a href="authentication.html">Login (Javascript Authentication)</a>
+        </li>
+      </ul>
+    </nav>
 
-<h1>Powers of Two</h1>
+    <h1>Powers of Two</h1>
 
-<div class="grid-container">
-    <div class="banner"><p>Binary is very important in Computer Science. Everything in a computer boils down to 0s and
-        1s. With computers, you often see numbers appear regularly when discussing sizes of things - hard disks, SSDs,
-            memory, network traffic etc.</p>
+    <div class="grid-container">
+      <div class="banner">
+        <p>
+          Binary is very important in Computer Science. Everything in a computer
+          boils down to 0s and 1s. With computers, you often see numbers appear
+          regularly when discussing sizes of things - hard disks, SSDs, memory,
+          network traffic etc.
+        </p>
         <p>This is all due to the powers of 2.</p>
-        <p>When you have one bit, the value can be 0 or 1. So there are 2 possibilities - 0 and 1.</p>
-        <p>When you have two bits, there are 4 possibilities - 00, 01, 10 and 11</p>
-        <p>With three bits, there are 8 possibilities - 000, 001, 010, 011, 100, 101, 110, 111</p>
+        <p>
+          When you have one bit, the value can be 0 or 1. So there are 2
+          possibilities - 0 and 1.
+        </p>
+        <p>
+          When you have two bits, there are 4 possibilities - 00, 01, 10 and 11
+        </p>
+        <p>
+          With three bits, there are 8 possibilities - 000, 001, 010, 011, 100,
+          101, 110, 111
+        </p>
         <p>and So on.</p>
         <p>2<sup>number of bits</sup> = the number of possible combinations</p>
-        <p>Student Note: the code should loop, showing the calculations of 2<sup>0</sup> through to 2<sup>100</sup></p>
-    </div>
-    <div>
+        <p>
+          Student Note: the code should loop, showing the calculations of 2<sup
+            >0</sup
+          >
+          through to 2<sup>100</sup>
+        </p>
+      </div>
+      <div>
         <p>Press this button to show the first 50 Powers of Two.</p>
 
         <button onclick="powers()">Click Here</button>
+      </div>
+      <div><p id="output">Output</p></div>
     </div>
-    <div><p id="output">Output</p></div>
-</div>
-
-</body>
-
+  </body>
 </html>
