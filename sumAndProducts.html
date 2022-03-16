@@ -9,22 +9,24 @@
         let randomNumbers = [];
         let numberDetails = {
           sum: 0,
-          product: 1;
-        }
+          product: 1
+        };
 
         // Generate and store random numbers
-        for (let i = 0; i <= nums; i++)
-            randomNumbers.push(Math.random() * 100);
+        for (let i = 0; i <= nums; i++) {
+          randomNumbers.push(Math.random() * 100);
         }
 
         // loop to calculate the sum and prduct and add them
         for (let i = 0; i <= nums; i++) {
-            numberDetails["sum"] = numberDetails["sum"] + randomNumbers[i];
-            numberDetails["product"] * randomNumbers[i];
+          numberDetails["sum"] = numberDetails["sum"] + randomNumbers[i];
+          numberDetails["product"] * randomNumbers[i];
         }
 
         // output
-        document.getElementById("randomNumbersOutput").innerHTML = numberDetails["sum"];
+        document.getElementById("randomNumbersOutput").innerHTML =
+          numberDetails["sum"];
+      }
     </script>
     <style>
       pre code {
