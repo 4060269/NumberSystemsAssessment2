@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="mainSite.css" />
     <script>
       function powers() {
-        for (i = 0; i <= 101; i++) {
-          powersOutput = Math.pow(2, i);
-          document.getElementById("output").innerHTML = powersOutput;
+        let powersOutput = "";
+
+        for (let i = 0; i <= 50; i++) {
+          powersOutput = powersOutput + "<br>" + i + ": " + Math.pow(2, i);
         }
+        document.getElementById("output").innerHTML = powersOutput;
       }
     </script>
   </head>
