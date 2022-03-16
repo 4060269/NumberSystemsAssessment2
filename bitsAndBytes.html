@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Bits and Bytes</title>
     <link rel="stylesheet" href="mainSite.css" />
+
     <script>
       function convertBits(form) {
         let bits = [0, 0, 0, 0, 0, 0, 0, 0];
@@ -15,9 +16,15 @@
         bits[5] = parseInt(form.input4.value);
         bits[6] = parseInt(form.input2.value);
         bits[7] = parseInt(form.input1.value);
+        // an array that assigns all seven values to a boxs input value
 
         let num = +bits.join("");
+        // taking the values from the boxes which are strings
+        // and pushing them together with double quotes around them
+
         let answer = parseInt(num, 2);
+        // takes num or "1010101" and parses a string, returns it as an int, 1010101
+        // radix is the number system to use, 2 = binary
 
         document.getElementById("output").innerHTML = answer;
       }
