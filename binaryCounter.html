@@ -8,8 +8,15 @@
       function powers() {
         let powersOutput = "";
 
+        /* structured for loop, statement 1 sets a variable before the loop starts,
+        2 defines the condition for the loop to run
+        3 increments or decrements a value (i++) */
         for (let i = 0; i <= 50; i++) {
           powersOutput = powersOutput + "<br>" + i + ": " + Math.pow(2, i);
+          // powersoutput to equal itself so it displays each loop
+          // "br" html code in js
+          // :  to create spacing
+          // math.pow a way to make a number have a power in js
         }
         document.getElementById("output").innerHTML = powersOutput;
       }
