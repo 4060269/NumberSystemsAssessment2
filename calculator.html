@@ -8,10 +8,15 @@
     <script>
       function twoToThePowerOf(form) {
         // read and store power value
+        // take the form from html as a parameter
+
         let power = parseInt(form.powerValue.value);
+        // parseInt parses a string argument and returns an integer of the specified radix
         // convert power to integer
+
         let answer = Math.pow(2, power);
-        //
+        // 2 ^ power = ??
+
         document.getElementById("powerResult").innerHTML = answer;
       }
     </script>
