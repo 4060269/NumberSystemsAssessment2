@@ -5,15 +5,15 @@
     <title>Decimal Conversion</title>
     <link rel="stylesheet" href="mainSite.css" />
     <script>
-      let decimalInput; // global variable
+      let decimalInput;
+      // global variable
 
       function startConversionProcess() {
-        // this is the 'main function' out of the three
-
         decimalInput = parseInt(
           prompt("Please enter a decimal (base 10) number")
         );
-        // Input: ask for binary number through prompt.
+        // this is the 'main function' out of the three
+        // Input: ask for decimal number through prompt.
         // a number from 0-9 since they are base 10 numerals
 
         convertToBinary();
@@ -25,14 +25,16 @@
       }
 
       function convertToBinary() {
+        // 0-1 or base 2
         let binaryEquivalent = decimalInput.toString(2);
-        // takes the int, makes it string and changes it to base2 by the radix parameter
+        // takes the int, makes it string and changes it t\o base2 by the radix parameter
 
         document.getElementById("outputBinary").innerHTML = binaryEquivalent;
       } // output to html element
 
       function convertToHexadecimal(decimalNumberToConvert) {
-        // passes a parametre local variable, used to refer to an agrument.
+        // 16 or base 16
+        // passes a parameter, local variable, used to refer to an agrument.
         // in this case, it takes the user input
 
         let hexadecimalEquivalent = decimalNumberToConvert.toString(16);
