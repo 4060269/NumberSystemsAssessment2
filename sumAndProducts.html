@@ -7,15 +7,21 @@
     <script>
       function randomNumberGenerator(nums) {
         let randomNumbers = [];
+        // empty array
+
         let numberDetails = {
           sum: 0,
           product: 1
         };
+        // create a key-value pair
 
-        // Generate and store random numbers
         for (let i = 0; i <= nums; i++) {
           randomNumbers.push(Math.random() * 100);
         }
+        // when i is < or = to nums, add i,
+        // push a new value to the end of the empty array
+        // math.random, returns a float between 0-1
+        // times that by 100 to create an interger
 
         // loop to calculate the sum and prduct and add them
         for (let i = 0; i <= nums; i++) {
@@ -27,6 +33,7 @@
         // output
         document.getElementById("randomNumbersOutput").innerHTML =
           numberDetails["sum"] + "<br>" + numberDetails["product"];
+        //
       }
     </script>
     <style>
